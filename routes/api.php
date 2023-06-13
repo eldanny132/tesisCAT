@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::put('/archivo', [TesisController::class, 'subirarchivo']);
+Route::post('/archivo', [TesisController::class, 'subirarchivo']);
 Route::post('/subir', [UploadController::class, 'upload']);
 route::apiResource('tesis',TesisController::class);
